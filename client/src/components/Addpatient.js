@@ -7,7 +7,7 @@ function Addpatient(){
   const submitHandler = (e) => {
        e.preventDefault();
       
-       fetch('http://localhost:5000/enterpatient', {
+       fetch('https://hospitalconnectapi.herokuapp.com/enterpatient', {
         method: 'POST', // or 'PUT'
         headers: {
            'Content-Type': 'application/json',
