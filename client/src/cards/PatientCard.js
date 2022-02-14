@@ -13,7 +13,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
     e.preventDefault();
     handleClose()
    
-    fetch('http://localhost:5000/enterpatient', {
+    fetch('https://hospitalconnectapi.herokuapp.com/enterpatient', {
      method: 'POST', // or 'PUT'
      headers: {
         'Content-Type': 'application/json',
