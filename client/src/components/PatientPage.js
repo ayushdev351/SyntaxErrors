@@ -15,7 +15,7 @@ function PatientPage()
   const submithandler=(e)=>{
     e.preventDefault();
     
-  fetch('http://localhost:5000/showdatabase', {
+  fetch('https://hospitalconnectapi.herokuapp.com/showdatabase', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
