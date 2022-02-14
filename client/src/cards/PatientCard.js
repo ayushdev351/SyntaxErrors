@@ -58,7 +58,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Hospital ID"
               name="hospitalID"
-              
+              style={{ width: "20rem"}}
             />
           </div>
           <div className="form-group myInput">
@@ -67,7 +67,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Patient ID"
               name="patientID"
-              
+              style={{ width: "20rem"}}
             />
           </div>
           <div className="form-group myInput">
@@ -76,7 +76,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Patient Name"
               name="patientName"
-              
+              style={{ width: "20rem"}}
             />
           </div>
           <div className="form-group myInput">
@@ -85,7 +85,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Patient Disease"
               name="patientDisease"
-              
+              style={{ width: "20rem"}}
             />
           </div>
 
