@@ -15,7 +15,7 @@ function Refered() {
   const submitHandler=(e)=>{
     e.preventDefault();
     
-  fetch('http://localhost:5000/showreferred', {
+  fetch('https://hospitalconnectapi.herokuapp.com/showreferred', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
