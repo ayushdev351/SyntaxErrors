@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Modal, Button} from "react-bootstrap";
+import {Modal} from "react-bootstrap";
 
 import "./PatientCard.css";
 
@@ -48,7 +48,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
 
         <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Enter ID Of Hospital To Refer To</Modal.Title>
+          <h1>Referal Form</h1>
         </Modal.Header>
         <Modal.Body>
           <form onSubmit= {submitHandler}>
@@ -58,7 +58,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Hospital ID"
               name="hospitalID"
-              style={{ width: "20rem"}}
+              style={{width: "75%"}}
             />
           </div>
           <div className="form-group myInput">
@@ -67,8 +67,9 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Patient ID"
               name="patientID"
-              style={{ width: "20rem"}}
+              style={{width: "75%"}}
             />
+            
           </div>
           <div className="form-group myInput">
             <input
@@ -76,8 +77,9 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Patient Name"
               name="patientName"
-              style={{ width: "20rem"}}
+              style={{width: "75%"}}
             />
+            
           </div>
           <div className="form-group myInput">
             <input
@@ -85,17 +87,16 @@ function PatientCard({ patientName, patientId, patientDisease }) {
               className="form-control form-control-lg"
               placeholder="Enter Patient Disease"
               name="patientDisease"
-              style={{ width: "20rem"}}
+              style={{width: "75%"}}
+          
             />
           </div>
-
-          <button className="btn btn-primary btn-lg myBtn">Save Changes</button>
           </form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" size="lg" onClick={handleClose}>
-            Close
-          </Button>
+          <div className="btnContainer">
+          <button className="modalBtn">Save Changes</button>
+          </div>
 
         </Modal.Footer>
       </Modal>
