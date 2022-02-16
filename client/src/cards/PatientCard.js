@@ -95,7 +95,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
         </Modal.Body>
         <Modal.Footer>
           <div className="btnContainer">
-          <button className="modalBtn">Save Changes</button>
+          <button className="modalBtn" onClick = {submitHandler}>Save Changes</button>
           </div>
 
         </Modal.Footer>
