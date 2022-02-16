@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Modal} from "react-bootstrap";
+import {Modal, Button} from "react-bootstrap";
 
 import "./PatientCard.css";
 
@@ -91,13 +91,12 @@ function PatientCard({ patientName, patientId, patientDisease }) {
           
             />
           </div>
+          <div className="btnContainer">
+          <Button className="modalBtn">Save Changes</Button>
+          </div>
           </form>
         </Modal.Body>
         <Modal.Footer>
-          <div className="btnContainer">
-          <button className="modalBtn" onClick = {submitHandler}>Save Changes</button>
-          </div>
-
         </Modal.Footer>
       </Modal>
       </div>
