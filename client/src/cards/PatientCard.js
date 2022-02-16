@@ -91,6 +91,7 @@ function PatientCard({ patientName, patientId, patientDisease }) {
           
             />
           </div>
+<<<<<<< HEAD
           <button className="btn btn-primary btn-sm myBtn">Save Changes</button>
           </form>
         </Modal.Body>
@@ -98,6 +99,14 @@ function PatientCard({ patientName, patientId, patientDisease }) {
         <Button variant="secondary" size="lg" onClick={handleClose}>
             Close
         </Button>
+=======
+          <div className="btnContainer">
+          <Button className="modalBtn">Save Changes</Button>
+          </div>
+          </form>
+        </Modal.Body>
+        <Modal.Footer>
+>>>>>>> 0e226fe9dea3d6ee0ce47bf1b5c0a3621d53ac9a
         </Modal.Footer>
       </Modal>
       </div>
